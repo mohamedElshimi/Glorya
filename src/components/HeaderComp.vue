@@ -223,9 +223,12 @@
                 class="nav-link fw-semibold"
                 aria-current="page"
                 :class="{
-                  active: isRouteActive('/ar/contactUs') || isRouteActive('/en/contactUs'),
+                  active:
+                    isRouteActive('/ar/contactUs') ||
+                    isRouteActive('/en/contactUs'),
                 }"
-                ><i class="fa-solid fa-message mx-2"></i>{{ $t("header.links.li2") }}</router-link
+                ><i class="fa-solid fa-message mx-2"></i
+                >{{ $t("header.links.li2") }}</router-link
               >
             </li>
           </ul>

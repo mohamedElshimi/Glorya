@@ -74,7 +74,6 @@
             {{ $t("home.sec1.para") }}
           </h5>
         </div>
-        
       </div>
     </section>
     <section class="my-5">
@@ -86,7 +85,9 @@
       </h6>
     </section>
     <section class="my-5">
-      <h1 class="text-center main-color font-hand">{{ $t("home.sec3.tit") }}</h1>
+      <h1 class="text-center main-color font-hand">
+        {{ $t("home.sec3.tit") }}
+      </h1>
       <div class="d-flex flex-wrap col-10 mx-auto mt-5">
         <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
           <div class="card position-relative pb-4 shadow-sec">
@@ -105,8 +106,8 @@
               {{ $t("home.sec3.card1.cardpara") }}
             </p>
             <button class="prim-btn col-10 mx-auto">
-              <i class="fa-brands fa-whatsapp me-3"></i
-              > {{ $t("home.sec3.card1.cardbtn") }}
+              <i class="fa-brands fa-whatsapp me-3"></i>
+              {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -127,8 +128,8 @@
               {{ $t("home.sec3.card2.cardpara") }}
             </p>
             <button class="prim-btn col-10 mx-auto">
-              <i class="fa-brands fa-whatsapp me-3"></i
-              > {{ $t("home.sec3.card2.cardbtn") }}
+              <i class="fa-brands fa-whatsapp me-3"></i>
+              {{ $t("home.sec3.card2.cardbtn") }}
             </button>
           </div>
         </div>
@@ -144,16 +145,20 @@
               {{ $t("home.sec3.card3.cardpara") }}
             </p>
             <button class="prim-btn col-10 mx-auto">
-              <i class="fa-brands fa-whatsapp me-3"></i
-              > {{ $t("home.sec3.card1.cardbtn") }}
+              <i class="fa-brands fa-whatsapp me-3"></i>
+              {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="my-5 img-overlay d-flex justify-content-center align-items-center">
-      <div class="d-flex flex-wrap align-items-center col-lg-6 col-md-8 col-10 text-center justify-content-between">
-        <h3 class="fw-semibold  col-lg-6 text-white">
+    <section
+      class="my-5 img-overlay d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="d-flex flex-wrap align-items-center col-lg-6 col-md-8 col-10 text-center justify-content-between"
+      >
+        <h3 class="fw-semibold col-lg-6 text-white">
           {{ $t("home.sec4.tit") }}
         </h3>
         <button class="btn btn-light col-lg-6 lg:mt-0 mt-3 fw-semibold text-lg">
@@ -187,14 +192,17 @@
                         <p class="fw-semibold m-0 text-center">1630</p>
                         <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div> -->
-            <h6 class="text-center px-2">{{ $t("home.sec6.card1.cardtit") }}</h6>
+            <h6 class="text-center px-2">
+              {{ $t("home.sec6.card1.cardtit") }}
+            </h6>
             <p class="text-center text-gray-600 my-3">
               {{ $t("home.sec6.card1.cardpara") }}
             </p>
             <button
               class="prim-btn rounded-3xl w-10/12 block mx-auto font-semibold"
             >
-              <i class="fa-brands fa-whatsapp me-3"></i> {{ $t("home.sec3.card1.cardbtn") }}
+              <i class="fa-brands fa-whatsapp me-3"></i>
+              {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -210,12 +218,15 @@
                         <p class="fw-semibold m-0 text-lg font-semibold text-center">1420</p>
                         <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div> -->
-            <h6 class="text-center px-2">{{ $t("home.sec6.card2.cardtit") }}</h6>
+            <h6 class="text-center px-2">
+              {{ $t("home.sec6.card2.cardtit") }}
+            </h6>
             <p class="text-center text-gray-600 my-3">
               {{ $t("home.sec6.card2.cardpara") }}
             </p>
             <button class="prim-btn w-10/12 block mx-auto font-semibold">
-              <i class="fa-brands fa-whatsapp me-3"></i> {{ $t("home.sec3.card1.cardbtn") }}
+              <i class="fa-brands fa-whatsapp me-3"></i>
+              {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -231,12 +242,15 @@
                         <p class="fw-semibold m-0 text-center">1210</p>
                         <p class="fw-semibold m-0 text-center text-sm">{{ $t('home.money') }}</p>
                     </div> -->
-            <h6 class="text-center px-2">{{ $t("home.sec6.card3.cardtit") }}</h6>
+            <h6 class="text-center px-2">
+              {{ $t("home.sec6.card3.cardtit") }}
+            </h6>
             <p class="text-center text-gray-600 my-3">
               {{ $t("home.sec6.card3.cardpara") }}
             </p>
             <button class="prim-btn w-10/12 block mx-auto font-semibold">
-              <i class="fa-brands fa-whatsapp me-3"></i> {{ $t("home.sec3.card1.cardbtn") }}
+              <i class="fa-brands fa-whatsapp me-3"></i>
+              {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -267,9 +281,23 @@
                   class="fa-solid fa-earth-americas fa-spin text-white fs-1"
                 ></i> -->
                 <div class="w-100">
-                  <img src="../../public/images/Programmes.PNG" class="w-100" alt="">
-                  <img src="../../public/images/Shape5.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
-                  <img src="../../public/images/Shape1.PNG" class="w-100" alt="" v-else>
+                  <img
+                    src="../../public/images/Programmes.png"
+                    class="w-100"
+                    alt=""
+                  />
+                  <img
+                    src="../../public/images/Shape5.png"
+                    class="w-100"
+                    alt=""
+                    v-if="$i18n.locale == 'en'"
+                  />
+                  <img
+                    src="../../public/images/Shape1.png"
+                    class="w-100"
+                    alt=""
+                    v-else
+                  />
                 </div>
               </div>
               <div class="circle-shadow-b" v-else-if="index == 1">
@@ -277,32 +305,74 @@
                   class="fa-solid fa-hotel text-white fs-1 fa-rotate fa-fade"
                 ></i> -->
                 <div class="w-100">
-                  <img src="../../public/images/Hotel.png" class="w-100" alt="">
-                  <img src="../../public/images/Shape6.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
-                  <img src="../../public/images/Shape2.PNG" class="w-100" alt="" v-else>
+                  <img
+                    src="../../public/images/Hotel.png"
+                    class="w-100"
+                    alt=""
+                  />
+                  <img
+                    src="../../public/images/Shape6.png"
+                    class="w-100"
+                    alt=""
+                    v-if="$i18n.locale == 'en'"
+                  />
+                  <img
+                    src="../../public/images/Shape2.png"
+                    class="w-100"
+                    alt=""
+                    v-else
+                  />
                 </div>
               </div>
               <div class="circle-shadow-o" v-else-if="index == 2">
                 <!-- <i class="fa-solid fa-car-side text-white fs-1 car"></i> -->
                 <div class="w-100">
-                  <img src="../../public/images/Rent-Car.PNG" class="w-100" alt="">
-                  <img src="../../public/images/Shape7.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
-                  <img src="../../public/images/Shape3.PNG" class="w-100" alt="" v-else>
+                  <img
+                    src="../../public/images/Rent-Car.png"
+                    class="w-100"
+                    alt=""
+                  />
+                  <img
+                    src="../../public/images/Shape7.png"
+                    class="w-100"
+                    alt=""
+                    v-if="$i18n.locale == 'en'"
+                  />
+                  <img
+                    src="../../public/images/Shape3.png"
+                    class="w-100"
+                    alt=""
+                    v-else
+                  />
                 </div>
               </div>
             </router-link>
             <a
-            v-if="item.link.includes('http')"
-            target="_blank"
-            class="fw-bold"
-            :href="item.link"
+              v-if="item.link.includes('http')"
+              target="_blank"
+              class="fw-bold"
+              :href="item.link"
             >
-            <div class="circle-shadow-b">
-              <!-- <i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i> -->
-              <div class="w-100">
-                <img src="../../public/images/Train.png" class="w-100" alt="">
-                <img src="../../public/images/Shape8.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
-                <img src="../../public/images/Shape4.PNG" class="w-100" alt="" v-else>
+              <div class="circle-shadow-b">
+                <!-- <i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i> -->
+                <div class="w-100">
+                  <img
+                    src="../../public/images/Train.png"
+                    class="w-100"
+                    alt=""
+                  />
+                  <img
+                    src="../../public/images/Shape8.png"
+                    class="w-100"
+                    alt=""
+                    v-if="$i18n.locale == 'en'"
+                  />
+                  <img
+                    src="../../public/images/Shape4.png"
+                    class="w-100"
+                    alt=""
+                    v-else
+                  />
                 </div>
               </div>
             </a>
@@ -634,18 +704,18 @@ onMounted(async () => {
 <style lang="scss" scoped>
 @font-face {
   font-family: handwrite;
-  src: url('../../public/fonts/Caveat-VariableFont_wght.ttf');
+  src: url("../../public/fonts/Caveat-VariableFont_wght.ttf");
 }
-.font-hand{
+.font-hand {
   font-family: handwrite;
 }
-.shadow-primary{
-  box-shadow: 3px 5px 23px 0px #fd820e 
+.shadow-primary {
+  box-shadow: 3px 5px 23px 0px #fd820e;
 }
-.shadow-sec{
-  box-shadow: 2px 2px 10px 0px #055f9f 
+.shadow-sec {
+  box-shadow: 2px 2px 10px 0px #055f9f;
 }
-.bg-travel-programs{
+.bg-travel-programs {
   background: #777 url(../../public/images/Travel-programs.jpg) center/cover;
   background-blend-mode: multiply;
 }
@@ -766,10 +836,11 @@ onMounted(async () => {
 }
 .img-overlay {
   height: 300px;
-    background: #777 url('../../public/images/travel-contact.jpg') no-repeat center/cover;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    // background-size: 100% 100%;
+  background: #777 url("../../public/images/travel-contact.jpg") no-repeat
+    center/cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  // background-size: 100% 100%;
   // background: #fd820e;
 }
 .price-overlay {
