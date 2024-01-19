@@ -164,7 +164,7 @@ router.beforeEach((to, from, next) => {
   // the default value will be the value in the localStorage of the english language
   let lang = to.params.lang;
 
-  // console.log(lang);
+  console.log(lang);
   // console.log(to.params);
   // this is for assigning the locale value to the default (english) or the value in the localStorage
   // without it the value will remain english as a default language in the i18n file remeber that :)
@@ -174,12 +174,12 @@ router.beforeEach((to, from, next) => {
     }
 
     const locale =
-      window.navigator.language || window.navigator.userLanguage || "en";
+      window.navigator.language || window.navigator.userLanguage || "ar";
     if (i18n.global.availableLocales.includes(locale)) {
       return next(locale);
     }
 
-    return next("en");
+    return next("ar");
   }
 
   i18n.global.locale.value = lang;
