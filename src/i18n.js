@@ -5,9 +5,9 @@ import ar from "./Locales/ar.json";
 const i18n = createI18n({
   legacy: false,
   globalInjection: true,
-  locale: "en",
-  fallbackLocale: "ar",
-  messages: { en, ar },
+  locale: "ar",
+  fallbackLocale: "en",
+  messages: { ar, en },
   sync: true,
 });
 
