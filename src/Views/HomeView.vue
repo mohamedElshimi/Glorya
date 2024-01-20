@@ -744,7 +744,7 @@ onMounted(async () => {
 }
 .menu-containar{
   position: fixed;
-  top: 90vh;
+  top: 85vh;
   z-index: 99999999;
 }
 .right-10{
