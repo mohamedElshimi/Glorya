@@ -1,63 +1,33 @@
 <template>
-  <div class="home-page">
-    <!-- <NewPopup :info="info" :openPopup="newPopup" @close-newPopup="() => (newPopup = false)"></NewPopup> -->
+  <div class="home-page position-relative">
+    <div class="position-fixed menu-containar" :class="{'right-10' : i18n.global.locale.value == 'ar' ,'left-10' : i18n.global.locale.value == 'en'|| i18n.global.locale.value == 'rus'}">
+      <a href="https://www.facebook.com/glorya.travel?mibextid=9R9pXO">
+        <div class="menu-item bg-primary " :class="{'facebook':showLinks}"><i class="fa-brands fa-facebook-f"></i></div>
+      </a>
+      <a href="https://www.instagram.com/gloryatravel/">
+        <div class="menu-item bg-danger " :class="{'insta':showLinks}"><i class="fa-brands fa-instagram"></i></div>
+      </a>
+      <a href="https://www.snapchat.com/add/glorya.travels?share_id=P74mPHpIQCM&locale=en-GB">
+        <div class="menu-item bg-warning " :class="{'snap':showLinks}"><i class="fa-brands fa-snapchat"></i></div>
+      </a>
+      <a href="https://api.whatsapp.com/send/?phone=995555559631&text">
+        <div class="menu-item bg-success " :class="{'whats':showLinks}"><i class="fa-brands fa-whatsapp"></i></div>
+      </a>
+      <div class="menu-item bg-main-color main-item" @click="toggleLinks"><i class="fa fa-commenting blob unselectable"></i></div>
+      <a href="https://api.whatsapp.com/send/?phone=995555559631&text">
+        <div class="menu position-relative ">
+        <i class="fa-brands fa-whatsapp text-light" :class="{'me-3' : i18n.global.locale.value == 'ar' ,'ms-3' : i18n.global.locale.value == 'en'|| i18n.global.locale.value == 'rus'}"></i> <span class="text-light"> {{ $t('whatsBtn') }}</span>
+      </div>
+      </a>
+    </div>
     <HeaderComp class="top-0 bg-white w-100" style="z-index: 555"></HeaderComp>
-    <!-- <div class="landing min-vh-100">
-            <Carousel class="min-vh-100 m-0 position-relative" :autoplay="3000" :wrap-around="true"
-                :dir="$i18n.locale === 'en' ? 'ltr' : 'rtl'">
-                <Slide class="min-vh-100 w-100 m-0" v-for="(item, index) in slider" :key="index">
-                    <div class="carousel__item w-100 h-100 m-0">
-                        <img :src="`https://seasonreal.seasonsge.com/images/settings/${item.image}`" class="d-block w-100 vh-100"
-                            style="object-fit: cover;" alt="..." />
-                        <div :class="`container text-${$i18n.locale === 'en' ? 'start' : 'end'}`">
-                            {{ item["title-en"] }}
-                            <div :class="`text-box p-4 position-absolute rounded-5 ${$i18n.locale === 'ar' ? 'ar' : ''}`"
-                                v-html="$i18n.locale === 'en' ? item['title_en'] : item['title']"></div>
-                        </div>
-                    </div>
-                </Slide>
-                <template #addons>
-                    <Navigation />
-                    <Pagination class="position-absolute" />
-                </template>
-            </Carousel>
-            <div class="socials d-flex align-items-center gap-3 position-absolute">
-                <a target="_blank" :href="info.facebook">
-                    <i class="fa-brands fa-facebook text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.messenger">
-                    <i class="fa-brands fa-facebook-messenger text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.twitter">
-                    <i class="fa-brands fa-twitter text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.telegram">
-                    <i class="fa-brands fa-telegram text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.instagram">
-                    <i class="fa-brands fa-instagram text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.youtube">
-                    <i class="fa-brands fa-youtube text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.tiktok">
-                    <i class="fa-brands fa-tiktok text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.whatsapp">
-                    <i class="fa-brands fa-whatsapp text-white fs-5"></i>
-                </a>
-                <a target="_blank" :href="info.snapchat">
-                    <i class="fa-brands fa-snapchat text-white fs-5"></i>
-                </a>
-            </div>
-        </div> -->
     <section class="my-5">
       <div
         class="row mx-auto d-flex col-10 flex justify-content-between align-items-center"
       >
         <div class="col-lg-6 w-full">
           <div
-            class="w-75 mx-auto shadow-sec d-flex flex justify-content-center align-items-center"
+            class="w-100 mx-auto shadow-sec d-flex flex justify-content-center align-items-center"
           >
             <img
               src="../../public/images/tour-3.jpg"
@@ -66,7 +36,7 @@
             />
           </div>
         </div>
-        <div class="col-lg-6 lg:text-start lg:mt-0 mt-3 text-center">
+        <div class="col-lg-6 lg:text-start lg:mt-0 mt-4 text-center">
           <h1 class="text-3xl font-hand main-color font-semibold">
             {{ $t("home.sec1.tit") }}
           </h1>
@@ -296,8 +266,15 @@
                     src="../../public/images/Shape1.png"
                     class="w-100"
                     alt=""
+                    v-else-if="$i18n.locale == 'ar'"
+                  />
+                  <img
+                    src="../../public/images/Programs.png"
+                    class="w-100"
+                    alt=""
                     v-else
                   />
+
                 </div>
               </div>
               <div class="circle-shadow-b" v-else-if="index == 1">
@@ -320,6 +297,12 @@
                     src="../../public/images/Shape2.png"
                     class="w-100"
                     alt=""
+                    v-else-if="$i18n.locale == 'ar'"
+                  />
+                  <img
+                    src="../../public/images/Hotelreservations.png"
+                    class="w-100"
+                    alt=""
                     v-else
                   />
                 </div>
@@ -340,6 +323,12 @@
                   />
                   <img
                     src="../../public/images/Shape3.png"
+                    class="w-100"
+                    alt=""
+                    v-else-if="$i18n.locale == 'ar'"
+                  />
+                  <img
+                    src="../../public/images/CarRental.png"
                     class="w-100"
                     alt=""
                     v-else
@@ -371,6 +360,12 @@
                     src="../../public/images/Shape4.png"
                     class="w-100"
                     alt=""
+                    v-else-if="$i18n.locale == 'ar'"
+                  />
+                  <img
+                    src="../../public/images/TrainReservation.png"
+                    class="w-100"
+                    alt=""
                     v-else
                   />
                 </div>
@@ -393,20 +388,6 @@
       </div>
     </section>
     <Loader v-if="loading"></Loader>
-    <!-- <section
-      class="bg-main-color py-5 d-flex justify-content-center align-items-center mb-5"
-    >
-      <div
-        class="d-flex flex-wrap col-10 justify-content-md-between justify-content-center"
-      >
-        <h3 class="fw-bold col-md-6 text-center text-white">
-          {{ $t("home.sec7.tit") }}
-        </h3>x`
-        <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold">
-          <i class="fa-solid fa-comments me-5"></i>{{ $t("home.sec7.btn") }}
-        </button>
-      </div>
-    </section> -->
     <section class="my-10">
       <swiper
         :modules="modules"
@@ -467,7 +448,6 @@
         >
       </div>
     </section>
-
     <FooterComp></FooterComp>
   </div>
 </template>
@@ -494,9 +474,12 @@ import "swiper/css/navigation";
 
 // Import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
+const toggleLinks = ()=>{
+  showLinks.value = !showLinks.value;
+  console.log(showLinks.value);
+}
 const modules = ref([Autoplay, Pagination, Navigation]);
-
+let showLinks = ref(false)
 const slider = ref([]);
 const images = ref([]);
 const newPopup = ref(false);
@@ -702,6 +685,74 @@ onMounted(async () => {
 </script>
 
 <style lang="scss" scoped>
+
+.menu{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  border-radius: 200px;
+}
+.menu i{
+  line-height: 50px;
+  font-size: 22px;
+}
+.menu-item{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 52px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.main-item{
+  opacity: 1;
+}
+.whats{
+  position: absolute;
+  bottom: 115px;
+  z-index: 20;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+.snap{
+  position: absolute;
+  bottom: 180px;
+  z-index: 20;
+  opacity: 1;
+  transition: all 0.7s ease-in;
+}
+.insta{
+  position: absolute;
+  bottom: 240px;
+  z-index: 20;
+  opacity: 1;
+  transition: all 0.9s ease-in;
+}
+.facebook{
+  position: absolute;
+  bottom: 300px;
+  z-index: 20;
+  opacity: 1;
+  transition: all 1.1s ease-in;
+}
+.menu-containar{
+  position: fixed;
+  top: 90vh;
+  z-index: 99999999;
+}
+.right-10{
+  right: 10px;
+}
+.left-10{
+  left: 10px;
+}
 @font-face {
   font-family: handwrite;
   src: url("../../public/fonts/Caveat-VariableFont_wght.ttf");

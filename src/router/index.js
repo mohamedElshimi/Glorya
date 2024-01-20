@@ -183,7 +183,7 @@ router.beforeEach((to, from, next) => {
   }
 
   i18n.global.locale.value = lang;
-  document.body.dir = lang === "en" ? "ltr" : "rtl";
+  document.body.dir = lang === "ar" ? "rtl" : "ltr";
   localStorage.setItem("lang", lang);
 
   return next();

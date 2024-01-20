@@ -24,8 +24,8 @@
             :key="index"
           >
             <h4 class="mb-2">
-              <i class="fa-solid fa-phone main-color ms-3"></i
-              ><span class="text-xl font-semibold">{{ item }}</span>
+              <span class="text-xl font-semibold">{{ item }}</span> <i class="fa-solid fa-phone main-color ms-3"></i
+              >
             </h4>
           </template>
         </div>
@@ -40,43 +40,43 @@
           class="d-flex justify-content-center align-items-center text-white social-link"
         >
           <!-- <i class="fa-brands fa-whatsapp fs-4"></i> -->
-          <img src="../../public/images/1.png" class="w-100" alt="" />
+          <a href="https://www.facebook.com/glorya.travel?mibextid=9R9pXO"><img src="../../public/images/1.png" class="w-100" alt="" /></a>
         </div>
         <div
           class="d-flex justify-content-center align-items-center text-white social-link"
         >
           <!-- <i class="fa-brands fa-instagram fs-4"></i> -->
-          <img src="../../public/images/2.png" class="w-100" alt="" />
+          <a href="https://www.instagram.com/gloryatravel/"><img src="../../public/images/2.png" class="w-100" alt="" /></a>
         </div>
         <div
           class="d-flex justify-content-center align-items-center text-white social-link"
         >
           <!-- <i class="fa-brands fa-twitter fs-4"></i> -->
-          <img src="../../public/images/3.png" class="w-100" alt="" />
+          <a href=""><img src="../../public/images/3.png" class="w-100" alt="" /></a>
         </div>
         <div
           class="d-flex justify-content-center align-items-center text-white social-link"
         >
           <!-- <i class="fa-brands fa-facebook-f fs-4"></i> -->
-          <img src="../../public/images/4.png" class="w-100" alt="" />
+          <a href="https://www.snapchat.com/add/glorya.travels?share_id=P74mPHpIQCM&locale=en-GB"><img src="../../public/images/4.png" class="w-100" alt="" /></a>
         </div>
         <div
           class="d-flex justify-content-center align-items-center text-white social-link"
         >
           <!-- <i class="fa-brands fa-snapchat fs-4"></i> -->
-          <img src="../../public/images/5.png" class="w-100" alt="" />
+          <a href=""><img src="../../public/images/5.png" class="w-100" alt="" /></a>
         </div>
         <div
           class="d-flex justify-content-center align-items-center text-white social-link"
         >
           <!-- <i class="fa-brands fa-tiktok fs-4"></i> -->
-          <img src="../../public/images/6.png" class="w-100" alt="" />
+          <a href="https://api.whatsapp.com/send/?phone=995555559631&text"><img src="../../public/images/6.png" class="w-100" alt="" /></a>
         </div>
         <div
           class="d-flex justify-content-center align-items-center text-white social-link"
         >
           <!-- <i class="fa-brands fa-youtube fs-4"></i> -->
-          <img src="../../public/images/7.png" class="w-100" alt="" />
+          <a href=""><img src="../../public/images/7.png" class="w-100" alt="" /></a>
         </div>
       </div>
     </section>
