@@ -14,7 +14,7 @@
         <div class="menu-item bg-success " :class="{'whats':showLinks}"><i class="fa-brands fa-whatsapp"></i></div>
       </a>
       <div class="menu-item bg-main-color main-item" @click="toggleLinks"><i class="fa fa-commenting blob unselectable"></i></div>
-      <a href="https://api.whatsapp.com/send/?phone=995555559631&text">
+      <a href="https://api.whatsapp.com/send/?phone=995555559631&text" class="text-decoration-none">
         <div class="menu position-relative ">
         <i class="fa-brands fa-whatsapp text-light" :class="{'me-3' : i18n.global.locale.value == 'ar' ,'ms-3' : i18n.global.locale.value == 'en'|| i18n.global.locale.value == 'rus'}"></i> <span class="text-light"> {{ $t('whatsBtn') }}</span>
       </div>
