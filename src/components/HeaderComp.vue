@@ -33,7 +33,7 @@
             <i class="fa-solid fa-user fs-6 ms-1"></i>
             <span class="ms-2">{{ $t("header.login") }}</span>
           </router-link>
-          <select class="form-select lang" v-model="language" @change="changeLang" aria-label="Default select example">
+          <select class="form-select lang d-sm-block d-none" v-model="language" @change="changeLang" aria-label="Default select example">
             <option value="ar">Arabic</option>
             <option value="en">English</option>
             <option value="rus">Russian</option>
@@ -88,13 +88,18 @@
           :to="`/${$i18n.locale}`"
           ><img src="../../public/images/logo.png" alt="" height="60"
         /></router-link>
-        <span
+        <!-- <span
           class="lang btn btn-dark me-auto fw-bold d-flex align-items-center gap-2 ms-3 d-sm-none d-block"
           @click="changeLang"
         >
           <i class="fa-solid fa-globe fs-4"></i>
           {{ $i18n.locale === "en" ? "AR" : "EN" }}
-        </span>
+        </span> -->
+        <select class="form-select lang d-sm-none d-block mx-1" v-model="language" @change="changeLang" aria-label="Default select example">
+            <option value="ar">Arabic</option>
+            <option value="en">English</option>
+            <option value="rus">Russian</option>
+          </select>
         <button
           class="navbar-toggler order-md-first"
           type="button"
